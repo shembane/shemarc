@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- Place between those 2 lines ur ARC.IO code -->
+ 
+ 
+<!-- ------------------------------------------ -->
+<style>
+h1 {text-align: center;}
+p {text-align: center;}
+div {text-align: center;}
+button{
+  margin:auto;
+  display:block;
+}
+button{
+  padding:16px 32px;
+  font-family:helvetica;
+  font-size:16px;
+  font-weight:100;
+  color:#fff;
+  background: #587286;
+  border:0;
+  font-weight:100;
+}
+button:hover{
+  background: #3B5C76;
+}
+p.a {
+  font-family: "Times New Roman", Times, serif;
+}
+ 
+p.b {
+  font-family: Arial, Helvetica, sans-serif;
+}
+h1.b {
+  font-family: Arial, Helvetica, sans-serif;
+}
+span.br {
+  font-family: Arial, Helvetica, sans-serif;
+}
+body {
+  padding: 20px;
+  background-color: white;
+  color: black;
+  font-size: 15px;
+}
+ 
+ 
+.dark-mode {
+  background-color: black;
+  color: white;
+}
+</style>
+<title>Keep this page open</title>
+</head>
+<body>
+<hr>
+ 
+<h1 class="b">Thanks for supporting!</h1>
+ 
+<p class="b"> - Keep this page as long u can on the background </p>
+<p class="b"> - Open this page at mutiple browsers. </p>
+<p class="b"> - Make sure you don't have any Ad Blocker activated. </p>
+<p class="b"> - Make sure you didn't disable WebRTC in your browser settings. </p>
+<p class="b"> - Make sure you are not opted out of Arc.io. You can check that by clicking the blue icon in the bottom left corner. </p>
+ 
+<hr>
+ 
+<p class="b"> total earned $0,<span id="minutes"></span><span id="seconds"></span><br><br> </p>
+<button onclick="myFunction()">Toggle dark mode</button>
+
+<script id="jsbin-javascript">
+var sec = 0;
+ 
+const pad = val => {
+    return val > 9 ? val : "0" + val;
+}
+const idk = setInterval(() => {
+    document.querySelector("#seconds").innerHTML = pad(++sec % 60);
+    document.querySelector("#minutes").innerHTML = pad(parseInt(sec / 60, 10));
+}, 60000);
+function myFunction() {
+   var element = document.body;
+   element.classList.toggle("dark-mode");
+}
+</script>
+<script type="text/javascript"  charset="utf-8">
+</script>
+<script src="/dfp.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+</script>
+</body>
+</html>
